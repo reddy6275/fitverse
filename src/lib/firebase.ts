@@ -5,13 +5,14 @@ import { getFirestore } from "firebase/firestore";
 const USE_MOCK_FIREBASE = false;
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBkJVxrJtEIOn6vFcwTrp7uxFEOGjkgHz4",
-  authDomain: "ai-website-b4c66.firebaseapp.com",
-  projectId: "ai-website-b4c66",
-  storageBucket: "ai-website-b4c66.firebasestorage.app",
-  messagingSenderId: "630258522809",
-  appId: "1:630258522809:web:b8501191ab9afaeedc1968"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY!,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN!,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID!,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET!,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID!,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID!,
 };
+
 
 const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 
