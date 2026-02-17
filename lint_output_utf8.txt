@@ -1,0 +1,9 @@
+﻿
+C:\CODE\ai-website\src\features\workout\services\workout-service.ts
+   3:10  warning  'collection' is defined but never used                @typescript-eslint/no-unused-vars
+  70:13  error    'maxVolume' is never reassigned. Use 'const' instead  prefer-const
+  70:13  warning  'maxVolume' is assigned a value but never used        @typescript-eslint/no-unused-vars
+
+Γ£û 3 problems (1 error, 2 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
